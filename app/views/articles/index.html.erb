@@ -9,7 +9,7 @@
     <th>Title</th>
     <th>Description</th>
   </tr>
-  <% @articles.each do |article| %>
+  <% if @article.present? %> <% @articles.each do |article| %>
   <tr>
     <td><%= article.id %></td>
     <td><%= article.title %></td>
@@ -21,7 +21,7 @@
       {confirm: "Are you sure?"} %>
     </td>
   </tr>
-  <% end %>
+  <% end %> <% end %>
 </table>
 
 <p>
