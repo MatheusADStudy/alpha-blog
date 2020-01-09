@@ -1,2 +1,121 @@
+$navbar-default-bg: #010101;
+$navbar-default-link-color: #f9f9f9;
+$navbar-default-link-hover-color: #f1ca17;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+  background: #f1ca17;
+  .center {
+    background: url("free.jpeg") no-repeat center;
+    background-position: center center;
+    background-size: cover;
+    height: 80vh;
+    text-align: center;
+
+    h1 {
+      text-transform: uppercase;
+      font-weight: 100;
+      letter-spacing: -2px;
+      color: white;
+
+      span {
+        font-weight: 800;
+        background-color: #f7a901;
+        padding: 0 0.5rem;
+        margin-left: 0.5rem;
+      }
+    }
+    a {
+      padding: 1.5rem 4rem;
+      border: 0;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 0;
+      text-transform: uppercase;
+      font-weight: 900;
+      color: #686767;
+      transition: all 0.25s;
+
+      &:hover {
+        color: #341814;
+        background-color: rgba(255, 255, 255, 0.85);
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+        border-radius: 0.25rem;
+      }
+    }
+  }
+  .footer {
+    margin-top: 2vh;
+    padding-top: 1vh;
+    border-top: solid 1px #010101;
+    color: #010101;
+
+    small {
+      float: left;
+    }
+    ul {
+      float: right;
+      list-style: none;
+      a {
+        &:hover {
+          color: #686767;
+        }
+      }
+    }
+  }
+}
+.navbar {
+  padding: 1.5rem 0;
+  font-size: 1.2em;
+  font-weight: 600;
+  .container {
+    .navbar-header {
+      a {
+        letter-spacing: -2px;
+        font-weight: 100;
+        font-size: 2em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        span {
+          font-weight: 900;
+        }
+
+        &:hover {
+          color: #f1ca17;
+        }
+      }
+    }
+  }
+}
+
+// // Basics of a navbar
+// @navbar-height:                    50px;
+// @navbar-margin-bottom:             @line-height-computed;
+// @navbar-default-color:             #777;
+// @navbar-default-bg:                #f8f8f8;
+// @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
+// @navbar-border-radius:             @border-radius-base;
+// @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
+// @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
+
+// // Navbar links
+// @navbar-default-link-color:                #777;
+// @navbar-default-link-hover-color:          #333;
+// @navbar-default-link-hover-bg:             transparent;
+// @navbar-default-link-active-color:         #555;
+// @navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+// @navbar-default-link-disabled-color:       #ccc;
+// @navbar-default-link-disabled-bg:          transparent;
+
+// // Navbar brand label
+// @navbar-default-brand-color:               @navbar-default-link-color;
+// @navbar-default-brand-hover-color:         darken(@navbar-default-link-color, 10%);
+// @navbar-default-brand-hover-bg:            transparent;
+
+// // Navbar toggle
+// @navbar-default-toggle-hover-bg:           #ddd;
+// @navbar-default-toggle-icon-bar-bg:        #ccc;
+// @navbar-default-toggle-border-color:
