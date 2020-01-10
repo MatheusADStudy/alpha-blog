@@ -8,6 +8,49 @@ $navbar-default-link-hover-color: #f1ca17;
 body {
   background: #f1ca17;
 
+  .article-header {
+    background-color: black;
+    width: 20%;
+    text-align: center;
+    padding: 1.2rem;
+    color: white;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-bottom: 2vh;
+    span {
+      background-color: white;
+      color: black;
+    }
+  }
+  .row {
+    .col-xs-8 {
+      .styles-well {
+        .article-title {
+          font-size: x-large;
+          a {
+            transition: 0.25s;
+            text-decoration: none;
+            &:hover {
+              color: dimgrey;
+              transition: 0.25s;
+            }
+          }
+        }
+
+        hr {
+          border-color: #29292837;
+        }
+
+        .article-actions {
+          a {
+            padding: 1rem;
+            font-size: medium;
+          }
+        }
+      }
+    }
+  }
+
   .center-title {
     text-transform: uppercase;
     background-color: black;
