@@ -8,7 +8,46 @@ $navbar-default-link-hover-color: #f1ca17;
 body {
   background: #f1ca17;
 
-  .alert-danger {
+  .center-title {
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    width: 67%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2.2rem;
+    border-radius: 4px;
+
+    h2 {
+      font-size: xx-large;
+      font-weight: 200;
+
+      span {
+        background-color: #f8f8f8;
+        padding: 1.5rem;
+        font-weight: 600;
+        color: black;
+        border-radius: 4px;
+        margin-left: 1rem;
+      }
+    }
+  }
+  .div-description {
+    h4 {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 200;
+    }
+
+    hr {
+      border-color: #29292837;
+    }
+
+    a {
+      padding: 1rem;
+      font-size: medium;
+    }
   }
 
   .panel-tag {
