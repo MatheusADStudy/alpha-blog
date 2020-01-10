@@ -7,6 +7,17 @@ $navbar-default-link-hover-color: #f1ca17;
 
 body {
   background: #f1ca17;
+
+  .alert-danger {
+  }
+
+  .panel-tag {
+    margin-top: 2vh;
+    .panel-danger {
+      margin-left: 1vh;
+      margin-right: 0.75vh;
+    }
+  }
   .new-article {
     background-color: white;
     h1 {
@@ -40,6 +51,10 @@ body {
             margin-top: 1vh;
           }
         }
+        .form-label {
+          text-align: right;
+        }
+
         .last {
           margin-top: 2vh;
           margin-bottom: 2vh;
@@ -61,8 +76,6 @@ body {
             }
           }
           .back-btn {
-            float: right;
-            margin-right: 2.5vw;
             a {
               border: 2px solid;
               border-color: #010101;
@@ -76,6 +89,9 @@ body {
                 color: white;
                 transition: all 0.25s;
               }
+            }
+            .link-back {
+              margin-left: 46px;
             }
           }
         }
