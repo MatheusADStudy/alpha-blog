@@ -6,10 +6,13 @@ class ArticlesController < ApplicationController
   end
 
   def create
+    # debugger
+    # onde u debugged type path_params  
     # render plain: params[:article].inspect
     # @article.save
     # redirect_to article_path(@article)
    @article = Article.new(article_params)
+   @article.user = User.first
     if @article.save
       #do something
       flash[:success] = "Article was successfully created"
