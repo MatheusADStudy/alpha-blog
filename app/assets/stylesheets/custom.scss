@@ -8,6 +8,19 @@ $navbar-default-link-hover-color: #f1ca17;
 body {
   background: #f1ca17;
 
+  // Style users list
+
+  .container {
+    .listing {
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+      padding-left: 0;
+    }
+    .well {
+    }
+  }
+
   .article-header {
     background-color: black;
     width: 20%;
