@@ -11,6 +11,22 @@ body {
   // Style users list
 
   .container {
+    .signup {
+      .row {
+        .col-sm-12 {
+          .row {
+            margin: 1rem 0;
+
+            label {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .container {
     .listing {
       list-style: none;
       align-items: center;
