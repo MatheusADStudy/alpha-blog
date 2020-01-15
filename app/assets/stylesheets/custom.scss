@@ -9,20 +9,21 @@ body {
   background: #f1ca17;
 
   // Style users list
+  .signup {
+    .first,
+    .second,
+    .third {
+      margin: 1rem auto;
+    }
 
-  .container {
-    .signup {
-      .row {
-        .col-sm-12 {
-          .row {
-            margin: 1rem 0;
+    label {
+      float: right;
+    }
+  }
 
-            label {
-              float: right;
-            }
-          }
-        }
-      }
+  .login-form {
+    .row {
+      margin: 1rem auto;
     }
   }
 
