@@ -37,7 +37,7 @@
             aria-expanded="false"
             >Actions
             <span class="caret"> </span>
-          </%=>
+          </a>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><%= link_to "New Article", new_article_path %></li>
@@ -71,7 +71,7 @@
             aria-haspopup="true"
             aria-expanded="false"
           >
-            Your Profile
+            Your Profile <%= "Admin" if current_user.admin? %>
             <span class="caret"> </span>
           </a>
           <ul class="dropdown-menu">
