@@ -9,6 +9,7 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
+    
   end
 
   def index
@@ -16,7 +17,6 @@ class UsersController < ApplicationController
   end
 
   def create
-    # debugger
     @user = User.new(user_params)
     if @user.save
       flash[:success] = "Welcome to the alpha blog #{@user.username}"
@@ -27,13 +27,13 @@ class UsersController < ApplicationController
   end
 
   def edit
-    # @user = User.find(params[:id])
+ 
   end
 
   def update
-    # @user = User.find(params[:id])
+    
     if @user.update(user_params)
-      debugger
+     
       flash[:success] = "Your account was updated succesfully"
       redirect_to articles_path 
     else
