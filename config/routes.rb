@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get 'signup', to: 'users#new' 
   
   # post 'users', to: 'users#create'
+  resources :categories, except: [:destroy]
   resources :articles
   resources :users, except: [:new]
 
